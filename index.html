@@ -13,18 +13,24 @@
 
 <body>
 
+  
+  <div id="cards">
 
-  <div id="cards"></div>
-
-	<div class="card template" style="width: 18rem;">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		</div>
-	</div>
+	<<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Cras justo odio
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Dapibus ac facilisis in
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Morbi leo risus
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
+    </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 	</script>
@@ -36,11 +42,7 @@
 
       
         // clear the display
-        $("#cards").empty();
-        var searchString = $("#zip").val();
-        console.log(searchString);
-        var url = endpoint + "&zip=" + searchString;
-        console.log(url);
+        
 
       $.get(url, function(response) {
           console.log(response);
